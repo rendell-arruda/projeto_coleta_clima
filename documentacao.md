@@ -28,7 +28,7 @@ Criação das colunas `regiao` (mapeamento manual de cada capital) e `faixa_temp
 ## 4. DATASET FINAL
 - **Total de registros:** 12
 - **Total de colunas:** 10
-- **Período:** 09/11/2026 06:00 a 09/11/2026 06:00
+- **Período:** 09/11/2026 06:15 a 09/11/2026 06:15
 - **Tamanho do arquivo:** 1.2 KB (`dataset_clima_brasil.csv`)
 
 ### Colunas:
@@ -50,23 +50,23 @@ Criação das colunas `regiao` (mapeamento manual de cada capital) e `faixa_temp
 ```
        temperatura_c  umidade_pct  vento_kmh
 count          12.00        12.00      12.00
-mean           20.48        88.33       7.71
-std             6.12         6.60       3.44
-min            10.50        75.00       2.10
-25%            15.38        85.00       4.58
-50%            20.60        89.00       8.85
-75%            26.45        93.25      10.22
-max            27.60        97.00      12.50
+mean           20.66        87.50       7.89
+std             6.17         6.97       3.61
+min            10.60        73.00       1.70
+25%            15.48        85.25       4.42
+50%            20.70        88.50       9.15
+75%            26.62        92.25      10.85
+max            28.00        96.00      12.70
 ```
 
 Temperatura média por região (°C):
 ```
 regiao
-Nordeste        27.1
-Norte           25.5
-Centro-Oeste    20.6
-Sudeste         16.2
-Sul             11.8
+Nordeste        27.5
+Norte           25.6
+Centro-Oeste    20.7
+Sudeste         16.3
+Sul             12.0
 ```
 
 ### 5.2 Visualizações
@@ -74,9 +74,9 @@ Sul             11.8
 - `grafico_temp_umidade.png`: dispersão entre temperatura e umidade.
 
 ## 6. INSIGHTS
-1. A capital mais quente da coleta foi Recife (27.6 °C) e a mais fria foi Curitiba (10.5 °C), uma amplitude de 17.1 °C.
-2. A região com maior temperatura média foi Nordeste (27.1 °C) e a de menor foi Sul (11.8 °C).
-3. A correlação entre temperatura e umidade foi de -0.59, negativa: nas cidades mais quentes a umidade tende a ser menor neste instante. O vento mais forte foi em Rio de Janeiro (12.5 km/h).
+1. A capital mais quente da coleta foi Recife (28.0 °C) e a mais fria foi Curitiba (10.6 °C), uma amplitude de 17.4 °C.
+2. A região com maior temperatura média foi Nordeste (27.5 °C) e a de menor foi Sul (11.9 °C).
+3. A correlação entre temperatura e umidade foi de -0.62, negativa: nas cidades mais quentes a umidade tende a ser menor neste instante. O vento mais forte foi em Rio de Janeiro (12.7 km/h).
 
 ## 7. LIMITAÇÕES
 - Os dados são uma fotografia de um único instante, então não mostram variação ao longo do dia ou da semana.
@@ -89,7 +89,7 @@ Sul             11.8
 - Publicar o projeto no GitHub com README.
 
 ## 9. CÓDIGO
-Notebook `projeto_coleta_clima.ipynb`. Repositório no GitHub: [colar o link aqui, se publicar]
+Notebook `projeto_coleta_clima.ipynb`. Repositório no GitHub: https://github.com/rendell-arruda/projeto_coleta_clima
 
 ## 10. REFERÊNCIAS
 - Open-Meteo, documentação da API: https://open-meteo.com/en/docs
